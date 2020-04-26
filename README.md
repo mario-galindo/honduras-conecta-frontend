@@ -8,7 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - NPM
 
 ## 1. Clone Repository
-Use `git clone` on your local file directory to clone
+Use `git clone` on your local file directory to clone:
+> git clone [https://github.com/mario-galindo/honduras-conecta-frontend.git]
 
 ## Available Scripts
 
