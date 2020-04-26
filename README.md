@@ -2,7 +2,7 @@ Welcome to the **Honduras Conecta** repository code for the **frontend-App**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Tool to install
+## Tools and Software to Install in Your Development Environment
 - Visual Studio Code
 - Node JS
 - NPM
