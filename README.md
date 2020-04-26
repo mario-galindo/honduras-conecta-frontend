@@ -1,4 +1,4 @@
-Welcome to the Honduras Conecta repository code for the frontend App
+Welcome to the **Honduras Conecta** repository code for the frontend App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
