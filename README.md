@@ -14,7 +14,7 @@ Use `git clone` on your local file directory to clone:
 ## 2. Install Node Modules
 In your project directory `npm install`
 
-## 3. Run App in localhost
+## 3. Run App in Localhost
 In your project directory `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
