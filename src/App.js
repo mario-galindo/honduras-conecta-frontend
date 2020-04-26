@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Bienvenido a Honduras Conecta
-        </p>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    isSignedIn: true
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {this.state.isSignedIn ? (
+        <header className="App-header">
+          <p>
+            Bienvenido a Honduras Conecta
+          </p>
+        </header>
+        ) : (
+          <header className="App-header">
+            <p>
+              Iniciar Sesion
+            </p>
+          </header>
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
