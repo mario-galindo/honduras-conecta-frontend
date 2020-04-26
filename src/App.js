@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
+//CUSTOM COMPONENTS
+import Login from '../src/components/Login'
+
 class App extends Component {
 
   state = {
-    isSignedIn: true
+    isSignedIn: false
   }
 
   render() {
@@ -17,11 +20,7 @@ class App extends Component {
           </p>
         </header>
         ) : (
-          <header className="App-header">
-            <p>
-              Iniciar Sesion
-            </p>
-          </header>
+          <Login></Login>
         )}
       </div>
     );
