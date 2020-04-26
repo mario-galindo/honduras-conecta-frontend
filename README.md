@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Use `git clone` on your local file directory to clone:
 > git clone [https://github.com/mario-galindo/honduras-conecta-frontend.git]
 
+## 2. Install Node Modules
+In your project directory `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
