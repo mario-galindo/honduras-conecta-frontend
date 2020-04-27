@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './logo2.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 //CUSTOM COMPONENTS
 import Login from '../src/components/Login'
 import Main from '../src/components/main'
+import Nav from './components/Nav';
+import About from './components/About';
+import Shop from './components/Shop'
 
 class App extends Component {
 
@@ -26,18 +30,14 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.isSignedIn ? (
-        <div className="container">
-           <div className="col-md-12">
-              <div className="row">
-                <Main title={this.state.voluntariado} boton={this.state.boton1}></Main>
-                <Main title={this.state.causa} boton={this.state.boton1}></Main>
-                <Main title={this.state.donacion} boton={this.state.boton2}></Main>
-                <Main title={this.state.acreditarDonacion} boton={this.state.boton3}></Main>
-                <Main title={this.state.solicitarVoluntariado} boton={this.state.boton2}></Main>
-                <Main title={this.state.voluntariado} boton={this.state.boton1}></Main>
-              </div>
-            </div>
-        </div>
+          <Router>
+          <Nav></Nav>
+          <Switch>
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/about" component={About}></Route>
+            <Route path="/shop" component={Shop}></Route>
+          </Switch>
+          </Router>
         ) : (
           <div  className="main-div">
             <img src={logo} className="App-logo" alt="logo"  />
@@ -50,5 +50,11 @@ class App extends Component {
     );
   }
 }
+
+const Home = () => (
+  <div>
+    <h1>Home Page</h1>
+  </div>
+);
 
 export default App;
