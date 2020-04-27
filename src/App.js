@@ -54,10 +54,10 @@ class App extends Component {
 const Home = () => (
   <div>
     <div class="container">
-    <div class="mt-5 row">
-      <h3>¿En qué quieres conectarte?</h3>
+    <div class="mt-5 row ">
+      <h3 className="App-header">¿En qué quieres conectarte?</h3>
       </div>
-      <div class=" mt-5row">
+      <div class=" mt-5 row">
       <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
       </div>
   <div class="mt-5 row">
