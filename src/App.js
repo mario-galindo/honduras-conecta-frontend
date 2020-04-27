@@ -57,7 +57,7 @@ const Home = () => (
     <div class="mt-5 row ">
       <h3 className="App-header">¿En qué quieres conectarte?</h3>
       </div>
-      <div class=" mt-5 row">
+      <div class=" mt-3 row">
       <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
       </div>
   <div class="mt-5 row">
