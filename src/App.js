@@ -10,7 +10,7 @@ import Main from '../src/components/main'
 class App extends Component {
 
   state = {
-    isSignedIn: false,
+    isSignedIn: true,
     voluntariado:"Registrar Voluntariado",
     causa:"Registrar Causa",
     donacion:"Solicitar Donacion",
