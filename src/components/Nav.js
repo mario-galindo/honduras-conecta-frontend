@@ -10,10 +10,11 @@ function Nav() {
 
   return (
     <nav>
-        <h3>Logo</h3>
+        <h3><Link to='/'>Honduras Conecta</Link></h3>
         <ul className="nav-Links">
             <Link to='/about' style={navStyle}><li>About</li></Link>
-            <Link to='/shop' style={navStyle}><li>Shop</li></Link>
+            <Link to='/businesssolutions' style={navStyle}><li>Business Solutions</li></Link>
+            <Link to='/businesssolutions' style={navStyle}><li>Perfil</li></Link>
         </ul>
     </nav>
   );

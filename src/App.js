@@ -9,7 +9,7 @@ import Login from '../src/components/Login'
 import Main from '../src/components/main'
 import Nav from './components/Nav';
 import About from './components/About';
-import Shop from './components/Shop'
+import BusinessSolutions from './components/BusinessSolutions'
 
 class App extends Component {
 
@@ -35,7 +35,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home}></Route>
             <Route path="/about" component={About}></Route>
-            <Route path="/shop" component={Shop}></Route>
+            <Route path="/businesssolutions" component={BusinessSolutions}></Route>
           </Switch>
           </Router>
         ) : (
@@ -53,7 +53,43 @@ class App extends Component {
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
+    <div class="container">
+    <div class="mt-5 row">
+      <h3>¿En qué quieres conectarte?</h3>
+      </div>
+      <div class=" mt-5row">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>
+      </div>
+  <div class="mt-5 row">
+    <div class="col-sm">
+      <div className="card">
+      <div className="card-body">
+      <h5 className="card-title">Voluntariado</h5>
+      <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
+      <a href="#" className="btn btn-primary">Unirse</a>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm">
+    <div className="card">
+      <div className="card-body">
+      <h5 className="card-title">Causa</h5>
+      <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
+      <a href="#" className="btn btn-primary">Unirse</a>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm">
+    <div className="card">
+      <div className="card-body">
+      <h5 className="card-title">Donacion</h5>
+      <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
+      <a href="#" className="btn btn-primary">Unirse</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 );
 
