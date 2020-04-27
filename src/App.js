@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './logo2.svg';
+
 
 //CUSTOM COMPONENTS
 import Login from '../src/components/Login'
@@ -8,7 +10,7 @@ import Main from '../src/components/main'
 class App extends Component {
 
   state = {
-    isSignedIn: true,
+    isSignedIn: false,
     voluntariado:"Registrar Voluntariado",
     causa:"Registrar Causa",
     donacion:"Solicitar Donacion",
@@ -37,7 +39,12 @@ class App extends Component {
             </div>
         </div>
         ) : (
-          <Login></Login>
+          <div  className="main-div">
+            <img src={logo} className="App-logo" alt="logo"  />
+            <input type="email" placeholder="Email..."  />
+            <input type="password" placeholder="Password..."  />
+            <button >Login to Account</button>
+          </div>
         )}
       </div>
     );
