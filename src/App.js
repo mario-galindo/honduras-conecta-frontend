@@ -66,7 +66,7 @@ const Home = () => (
       <div className="card-body">
       <h5 className="card-title">Voluntariado</h5>
       <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
-      <a href="#" className="btn btn-primary">Unirse</a>
+      <a href="#" className="btn btn-primary">Registrarse</a>
       </div>
       </div>
     </div>
@@ -75,16 +75,16 @@ const Home = () => (
       <div className="card-body">
       <h5 className="card-title">Causa</h5>
       <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
-      <a href="#" className="btn btn-primary">Unirse</a>
+      <a href="#" className="btn btn-primary">Apoyar</a>
       </div>
       </div>
     </div>
     <div class="col-sm">
     <div className="card">
       <div className="card-body">
-      <h5 className="card-title">Donacion</h5>
+      <h5 className="card-title">Donación</h5>
       <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
-      <a href="#" className="btn btn-primary">Unirse</a>
+      <a href="#" className="btn btn-primary">Donar</a>
       </div>
       </div>
     </div>
