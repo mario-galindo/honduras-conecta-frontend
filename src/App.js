@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './logo2.svg';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route ,Link} from 'react-router-dom'
 
 
 //CUSTOM COMPONENTS
@@ -10,6 +10,7 @@ import Main from '../src/components/main'
 import Nav from './components/Nav';
 import About from './components/About';
 import BusinessSolutions from './components/BusinessSolutions'
+import VoluntarioForm from './components/VoluntarioForm'
 
 class App extends Component {
 
@@ -36,6 +37,7 @@ class App extends Component {
             <Route path="/" exact component={Home}></Route>
             <Route path="/about" component={About}></Route>
             <Route path="/businesssolutions" component={BusinessSolutions}></Route>
+            <Route path="/voluntario" component={VoluntarioForm}></Route>
           </Switch>
           </Router>
         ) : (
@@ -66,7 +68,8 @@ const Home = () => (
       <div className="card-body">
       <h5 className="card-title">Voluntariado</h5>
       <p className="card-text">Unete a la causa y se parte del voluntariado.</p>
-      <a href="#" className="btn btn-primary">Registrarse</a>
+      
+      <Link to='/voluntario'><a href="#" className="btn btn-primary">Registrarse</a></Link>
       </div>
       </div>
     </div>
