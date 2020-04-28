@@ -14,7 +14,7 @@ class VoluntarioForm extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className="col-md-6 text-center">
+                <div className="col-md-6 text-center mx-auto">
                     <form className="card-body">
                         <div className="form-group">
                             <input
