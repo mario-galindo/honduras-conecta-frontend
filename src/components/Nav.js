@@ -10,7 +10,7 @@ function Nav() {
 
   return (
     <nav>
-        <h3><Link to='/'>Honduras Conecta</Link></h3>
+        <h3><Link to='/' style={navStyle}>Honduras Conecta</Link></h3>
         <ul className="nav-Links">
             <Link to='/about' style={navStyle}><li>About</li></Link>
             <Link to='/businesssolutions' style={navStyle}><li>Business Solutions</li></Link>
