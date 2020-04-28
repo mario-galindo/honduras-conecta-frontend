@@ -14,6 +14,12 @@ import VoluntarioForm from './components/VoluntarioForm'
 
 class App extends Component {
 
+  constructor() {
+
+    super();
+    this.handleAddTodo = this.handleAddTodo.bind(this);
+  }
+
   state = {
     isSignedIn: true,
     voluntariado:"Registrar Voluntariado",
@@ -26,6 +32,9 @@ class App extends Component {
     boton3:"Acreditar"
   }
 
+  handleAddTodo(todo) {
+    console.log(todo)
+  }
  
   render() {
     return (
